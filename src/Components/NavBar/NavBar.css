@@ -1,0 +1,108 @@
+.NavBar-Holder-it {
+    margin: 0;
+    padding: 0 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 9vh;
+    font-family: verdana;
+    background-color:black;   
+    border-radius:0 25% 0 0 25%;  
+   }
+   
+   .NavBar-ul-it {
+     padding: 0;
+     display: flex;
+   }
+   
+   .NavBar-li-it {
+     list-style-type: none;
+     padding: 10px 20px;
+   }
+   .first {
+     list-style-type: none;
+     padding: 10px 20px;
+   }
+   
+   .NavBar-Links-it {
+     text-decoration: none;
+     /* text-transform: uppercase; */
+     font-size: 20px;
+     color: white;
+     position: relative;
+   }
+   
+   .NavBar-Holder-it .NavBar-ul-it .NavBar-li-it .NavBar-Links-it:before {
+     content: "";
+     width: 0;
+     height: 5px;
+     background-color: #bd0759;
+     position: absolute;
+     top: 120%;
+     left: 0;
+     transition: all 0.5s;
+   }
+   
+   .NavBar-ul-it .NavBar-li-it .NavBar-Links-it:after {
+     content: "";
+     width: 0;
+     height: 5px;
+     background-color: rgb(227, 199, 42);
+     position: absolute;
+     top: 120%;
+     right: 0;
+     transition: all 0.5s;
+   }
+   
+   .NavBar-ul-it .NavBar-li-it .NavBar-Links-it:hover:before {
+     width: 50%;
+     transform: translateX(100%);
+   }
+   
+   .NavBar-ul-it .NavBar-li-it .NavBar-Links-it:hover:after {
+     width: 50%;
+     transform: translateX(-100%);
+   }
+
+
+   /* ------------------------------  logo border  -------------------------- */
+
+.NavBar-logo-it {
+  margin: 1vh 1vh;
+  font-size: 2rem;
+  -webkit-animation: textColor 10s ease infinite;
+          animation: textColor 10s ease infinite;
+}
+
+.NavBar-logo-it .NavBar-Links-it {
+            
+            
+            
+            color: white;
+            font-size: 2em;
+            
+        
+            -webkit-animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                    animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          }
+          
+          
+          
+          @-webkit-keyframes neonGlow {
+            0% {
+              text-shadow: 0 0 10px rgba(181, 36, 36, 0.8), 0 0 20px rgba(117, 16, 16, 0.8), 0 0 22px rgba(116, 4, 4, 0.8), 0 0 40px#e01c33, 0 0 60px #e01c33, 0 0 80px #e01c33, 0 0 100px rgba(125, 7, 146, 0.5), 0 0 140px #e01c33, 0 0 200px #e01c33;
+            }
+            100% {
+              text-shadow: 0 0 2px rgba(212, 19, 19, 0.8), 0 0 8px #e01c33 , 0 0 10px rgba(179, 16, 16, 0.8), 0 0 20px #e01c33, 0 0 30px #e01c33, 0 0 40px #e01c33, 0 0 50px #e01c33, 0 0 80px rgba(154, 104, 24, 0.5);
+            }
+          }
+          
+          @keyframes neonGlow {
+            0% {
+              text-shadow: 0 0 10px#e01c33, 0 0 20px#e01c33, 0 0 22px rgba(168, 17, 17, 0.8), 0 0 40px rgba(141, 14, 35, 0.8), 0 0 60px rgba(196, 22, 46, 0.8), 0 0 80px rgba(130, 5, 123, 0.5), 0 0 100px rgba(213, 13, 40, 0.5), 0 0 140px rgba(237, 164, 16, 0.5), 0 0 200px rgba(213, 15, 41, 0.5);
+            }
+            100% {
+              text-shadow: 0 0 2px#e01c33, 0 0 8px#e01c33, 0 0 10px rgba(191, 21, 21, 0.8), 0 0 20px #e01c33, 0 0 30px rgba(170, 10, 87, 0.8), 0 0 40px rgba(233, 20, 37, 0.8), 0 0 50px rgba(235, 33, 56, 0.5), 0 0 80px rgba(223, 65, 8, 0.5);
+            }
+          }/*# sourceMappingURL=index.css.map */
